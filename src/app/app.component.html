@@ -1,0 +1,21 @@
+<nav class="navbar">
+  <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+  <ul class="nav-list">
+      <li><a class="active" href="#/home">Home</a></li>
+      <li><a href="#/react">React</a></li>
+      <li><a href="#/angular">Angular 18</a></li> 
+      <li><a href="#/about">About</a></li>
+  </ul>
+</nav>
+<script>
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navList = document.querySelector('.nav-list');
+
+  mobileMenu.addEventListener('click', () => {
+      navList.classList.toggle('active');
+  });
+</script>
